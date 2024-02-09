@@ -1,0 +1,127 @@
+/* ----- Contact Us Section ----- */
+.contact {
+  margin-top: 2rem;
+}
+
+/* Contact Top Section */
+.contact .contact-title {
+  color: var(--text-black-900);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contact .contact-sub-title {
+  color: var(--text-black-700);
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 60px;
+  text-transform: capitalize;
+}
+
+.contact .contact-info-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact .contact-info-item .icon {
+  display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa {
+  font-size: 2rem;
+  background-color: var(--bg-black-900);
+  border: 1px solid var(--bg-black-50);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 50%;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact .contact-info-item .icon .fa:hover {
+  transform: scale(1.05);
+}
+
+.contact .contact-info-item h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-black-900);
+  text-transform: capitalize;
+  margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p {
+  font-size: 1rem;
+  line-height: 25px;
+  color: var(--text-black-700);
+  font-weight: 400;
+}
+
+/* Contact Form Style */
+.contact-us-section {
+  margin: 3rem 0;
+}
+
+.contact-us-section .contact-left-side .paragraph {
+  margin-left: 0 !important;
+}
+
+.contact-left-side img {
+  min-width: 80%;
+  max-height: 30rem;
+  height: auto;
+  border-radius: 1.25rem;
+}
+
+.contact-input-field {
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  height: 3.2rem;
+}
+
+.contact-right-side form .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 25px;
+  background: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  padding: 10px 25px;
+  font-size: 16px;
+  color: var(--text-black-700);
+  transition: all 0.3s ease;
+}
+
+.contact-right-side form .form-control:focus {
+  box-shadow: 0 0 30px rgba(16, 15, 27, 0.15);
+  border: 1.5px solid rgba(0, 0, 0, 0.25);
+}
+
+.contact-right-side form textarea.form-control {
+  height: 140px;
+}
+
+/* Media Query */
+@media (max-width: 991px) {
+  .contact .contact-info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .contact-info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact-us-section .container{
+    padding: 0 3rem;
+  }
+}

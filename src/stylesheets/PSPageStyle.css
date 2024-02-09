@@ -1,0 +1,36 @@
+.problem-statements {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* width: 80vw; */
+}
+
+.problem-statements thead tr th {
+  background-color: var(--skin-color);
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.problem-statements tbody tr td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.search-input {
+  border: 1px solid #ced4da;
+  border-radius: 25px;
+  background: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  padding: 10px 25px;
+  font-size: 16px;
+  color: var(--text-black-700);
+  transition: all 0.3s ease;
+  outline: none !important;
+  box-shadow: none;
+  margin: 1rem 0;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 30px rgba(16, 15, 27, 0.15);
+  border: 1.5px solid rgba(0, 0, 0, 0.25);
+}

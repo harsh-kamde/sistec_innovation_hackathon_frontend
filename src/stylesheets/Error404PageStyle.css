@@ -1,0 +1,52 @@
+.page-not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-not-found .lottie-animation{
+    width: 50vh;
+    margin: 0 2rem;
+}
+
+.page-not-found h2{
+    color: #006d49;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.page-not-found p{
+    color: var(--text-black-700);
+    font-size: 1rem;
+}
+
+.page-not-found .my-btn{
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.page-not-found .my-btn:hover{
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    .page-not-found .lottie-animation{
+        width: 100%;
+    }
+
+    #not-found .container{
+        padding: 0 3rem;
+    }
+
+    .page-not-found h2{
+    text-align: center;
+    text-transform: capitalize;
+    }
+
+    .page-not-found p{
+        text-align: justify;
+        margin: 2rem 0;
+    }
+}
