@@ -67,28 +67,65 @@ const RegistrationForm = () => {
   const [step, setStep] = useState(1);
 
   const nextStep = () => {
-    setStep(step + 1);
+        // Validate before moving to the next step
+        if (validateStep(step)) {
+          setStep(step + 1);
+        }
   };
 
   const prevStep = () => {
     setStep(step - 1);
   };
 
-  //for handling form submission
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
+    // Function to validate step before proceeding
+    const validateStep = (step) => {
+      switch (step) {
+        case 1:
+          return (
+            teamData.leaderName &&
+            teamData.teamName &&
+            teamData.leaderPhone &&
+            teamData.leaderEmail &&
+            teamData.instituteName &&
+            selectedTheme &&
+            selectedGender
+          );
+        case 2:
+          return (
+            teamData.member1Name &&
+            teamData.member1Email &&
+            teamData.member1Phone &&
+            teamData.member2Name &&
+            teamData.member2Email &&
+            teamData.member2Phone &&
+            teamData.member3Name &&
+            teamData.member3Email &&
+            teamData.member3Phone &&
+            teamData.member4Name &&
+            teamData.member4Email &&
+            teamData.member4Phone
+          );
+        case 3:
+          return teamData.PSCode && teamData.PSTitle;
+        default:
+          return true;
+      }
+    };
 
-  //   console.log(teamData);
-  //   console.log("Theme: "+selectedTheme);
-  //   console.log("Leader gender: "+selectedGender);
-  //   console.log("member1 gender: "+member1Gender);
-  //   console.log("member2 gender: "+member2Gender);
-  //   console.log("memeber3 gender: "+member3Gender);
-  //   console.log("memeber4 gender: "+member4Gender);
-  //   console.log(selectedFile);
-  //   console.log(selectedFile2);
-  //   console.log(selectedFile3);
-  // };
+      // Function to validate selected files
+  const validateFiles = () => {
+    return selectedFile && selectedFile2 && selectedFile3;
+  };
+
+      // Function to validate the entire form
+  const validateForm = () => {
+    return (
+      validateStep(1) &&
+      validateStep(2) &&
+      validateStep(3) &&
+      validateFiles()
+    );
+  };
 
   const gender = ["Male", "Female", "Other"];
   const themes = [
@@ -236,6 +273,11 @@ const RegistrationForm = () => {
   // form submit handle
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validateForm()) {
+      // Form validation failed
+      toast.error("Please fill in all required fields.");
+      return;
+    }
     setIsLoading(true);
     const id = toast.loading("Submitting Form");
     try {
@@ -424,7 +466,11 @@ const RegistrationForm = () => {
               {/* Buttons */}
               <div className="form-box">
                 <div className="btn-step">
-                  <button type="button" onClick={nextStep}>
+                  <button 
+                    type="button" 
+                    onClick={nextStep}
+                    disabled={!validateStep(step)}
+                  >
                     Next &#65515;
                   </button>
                 </div>
