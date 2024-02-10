@@ -197,15 +197,13 @@ import Dropdown from "./Dropdown";
 const Step1 = ({ step, nextStep, formData, handleInputChange }) => {
   const themes = [
     "Agri-Tech",
-    "Cyber Security",
-    "Criminal Database",
     "Environment & Climate Control",
     "Edu-Tech",
-    "Force Engagement",
     "Health-Tech",
+    "Law & Order",
     "Miscellaneous",
-    "Social Media",
-    "Vehicle Theft",
+    "Smart City",
+    "Security",
   ];
 
   const gender = ["Male", "Female", "Other"];
@@ -301,7 +299,9 @@ const Step1 = ({ step, nextStep, formData, handleInputChange }) => {
               placeholder="Institute Name"
               name="instituteName"
               value={formData.instituteName}
-              onChange={(e) => handleInputChange("instituteName", e.target.value)}
+              onChange={(e) =>
+                handleInputChange("instituteName", e.target.value)
+              }
             />
           </div>
         </div>
