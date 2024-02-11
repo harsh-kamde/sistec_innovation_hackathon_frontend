@@ -43,19 +43,20 @@ const sihThemesAPI = [
     description:
       "Miscellaneous, indiscriminate, promiscuous refer to mixture and lack of order, and may imply lack of discernment or taste. Miscellaneous emphasizes the idea of the mixture of things of different kinds or natures.",
   },
+ 
   {
     id: 7,
-    logo: "./images/SIHThemes/Smart-city.png",
-    themeName: "Smart City",
-    description:
-      "A smart city is a place where traditional networks and services are made more efficient with the use of digital solutions for the benefit of its inhabitants and business. ",
-  },
-  {
-    id: 8,
     logo: "./images/SIHThemes/Security.jpg",
     themeName: "Security",
     description:
       "Security technology helps mitigate risk by preventing unauthorized access, identifying potential incidents, allowing fast responses, deterring criminal behavior and capturing crucial evidence in the event that a breach.",
+  },
+   {
+    id: 8,
+    logo: "./images/SIHThemes/Smart-city.png",
+    themeName: "Urban Mobility",
+    description:
+      "Urban areas are the most complex settings in which the mobility of passengers and freight is taking place. Typical urban attributes such as density, diverse economic, cultural, political, and social functions, and land scarcity. ",
   },
   
   
