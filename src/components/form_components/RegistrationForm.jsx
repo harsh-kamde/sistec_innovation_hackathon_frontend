@@ -494,6 +494,7 @@ const RegistrationForm = () => {
               style={{ display: step === 2 ? "block" : "none" }}
             >
               {/* Member 1 Details */}
+              <div className="label">Member 1 Details</div>
               <div class="form-box">
                 <div class="form-group">
                   <input
@@ -541,6 +542,7 @@ const RegistrationForm = () => {
               </div>
 
               {/* Member 2 Details */}
+              <div className="label">Member 2 Details</div>
               <div class="form-box">
                 <div class="form-group">
                   <input
@@ -588,6 +590,7 @@ const RegistrationForm = () => {
               </div>
 
               {/* Member 3 Details */}
+              <div className="label">Member 3 Details</div>
               <div class="form-box">
                 <div class="form-group">
                   <input
@@ -635,6 +638,7 @@ const RegistrationForm = () => {
               </div>
 
               {/* Member 4 Details */}
+              <div className="label">Member 4 Details</div>
               <div class="form-box">
                 <div class="form-group">
                   <input
