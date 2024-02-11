@@ -135,8 +135,8 @@ const RegistrationForm = () => {
     "Health-Tech",
     "Law & Order",
     "Miscellaneous",
-    "Smart City",
     "Security",
+    "Urban Mobility",
   ];
 
   const [selectedFile, setSelectedFile] = useState(null);
