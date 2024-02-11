@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../../stylesheets/NavbarStyle.css";
 import { NavLink } from "react-router-dom";
 import instructionPdf from "../../Assets/Guidelines/instructions.pdf";
-import ideaTemplatePPT from "../../Assets/Guidelines/Idea-Presentation-Format.pptx";
+import ideaTemplatePPT from "../../Assets/Guidelines/Idea-Presentation Format SIH 2.0.pptx";
 import nominationLatter from "../../Assets/Guidelines/nomination.pdf";
 import howToApplyPdf from "../../Assets/Guidelines/how-to-apply.pdf";
 
