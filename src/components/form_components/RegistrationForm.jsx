@@ -353,7 +353,10 @@ const RegistrationForm = () => {
                     : ""
                 }
               >
-                Team Details
+                <span className="step-title">
+                  <span>Team</span>
+                  <span>Details</span>
+                </span>
               </li>
               <li
                 className={
@@ -362,17 +365,25 @@ const RegistrationForm = () => {
                     : "line-bar"
                 }
               >
-                Team Member Details
+                <span className="step-title">
+                  <span>Team</span>
+                  <span>Member</span>
+                  <span>Details</span>
+                </span>
               </li>
               <li
                 className={
                   step === 3 || step === 4 ? "active line-bar" : "line-bar"
                 }
               >
-                Solution
+                <span className="step-title">
+                  <span>Solution</span>
+                </span>
               </li>
               <li className={step === 4 ? "active line-bar" : "line-bar"}>
-                Payment
+                <span className="step-title">
+                  <span>Payment</span>
+                </span>
               </li>
             </ul>
 
