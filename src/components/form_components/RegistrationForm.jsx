@@ -8,7 +8,7 @@ const URL = `${API_URL}/api/team/register`;
 
 const RegistrationForm = () => {
   const [selectedTheme, setSelectedTheme] = useState("Choose Theme");
-  const [selectedGender, setSelectedGender] = useState("Gender");
+  const [selectedGender, setSelectedGender] = useState("Leader Gender");
   const [member1Gender, setMember1Gender] = useState("Member 1 Gender");
   const [member2Gender, setMember2Gender] = useState("Member 2 Gender");
   const [member3Gender, setMember3Gender] = useState("Member 3 Gender");
@@ -424,6 +424,11 @@ const RegistrationForm = () => {
                     selected={selectedTheme}
                     setSelected={setSelectedTheme}
                     options={themes}
+                    color={
+                      selectedTheme === "Choose Theme"
+                      ? "#cac1ce"
+                      : "var(--text-black-700)"
+                    }
                   />
                 </div>
                 <div class="form-group">
@@ -431,6 +436,11 @@ const RegistrationForm = () => {
                     selected={selectedGender}
                     setSelected={setSelectedGender}
                     options={gender}
+                    color={
+                      selectedGender === "Leader Gender"
+                      ? "#cac1ce"
+                      : "var(--text-black-700)"
+                    }
                   />
                 </div>
               </div>
@@ -512,6 +522,11 @@ const RegistrationForm = () => {
                     selected={member1Gender}
                     setSelected={setMember1Gender}
                     options={gender}
+                    color={
+                      member1Gender === "Member 1 Gender"
+                      ? "#cac1ce"
+                      : "var(--text-black-700)"
+                    }
                   />
                 </div>
               </div>
@@ -560,6 +575,11 @@ const RegistrationForm = () => {
                     selected={member2Gender}
                     setSelected={setMember2Gender}
                     options={gender}
+                    color={
+                      member2Gender === "Member 2 Gender"
+                      ? "#cac1ce"
+                      : "var(--text-black-700)"
+                    }
                   />
                 </div>
               </div>
@@ -608,6 +628,11 @@ const RegistrationForm = () => {
                     selected={member3Gender}
                     setSelected={setMember3Gender}
                     options={gender}
+                    color={
+                      member3Gender === "Member 3 Gender"
+                      ? "#cac1ce"
+                      : "var(--text-black-700)"
+                    }
                   />
                 </div>
               </div>
@@ -656,6 +681,11 @@ const RegistrationForm = () => {
                     selected={member4Gender}
                     setSelected={setMember4Gender}
                     options={gender}
+                    color={
+                      member4Gender === "Member 4 Gender"
+                      ? "#cac1ce"
+                      : "var(--text-black-700)"
+                    }
                   />
                 </div>
               </div>
