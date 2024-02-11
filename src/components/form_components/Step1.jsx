@@ -191,131 +191,131 @@
 
 // export default Step1;
 
-import React from "react";
-import Dropdown from "./Dropdown";
+// import React from "react";
+// import Dropdown from "./Dropdown";
 
-const Step1 = ({ step, nextStep, formData, handleInputChange }) => {
-  const themes = [
-    "Agri-Tech",
-    "Environment & Climate Control",
-    "Edu-Tech",
-    "Health-Tech",
-    "Law & Order",
-    "Miscellaneous",
-    "Smart City",
-    "Security",
-  ];
+// const Step1 = ({ step, nextStep, formData, handleInputChange }) => {
+//   const themes = [
+//     "Agri-Tech",
+//     "Environment & Climate Control",
+//     "Edu-Tech",
+//     "Health-Tech",
+//     "Law & Order",
+//     "Miscellaneous",
+//     "Smart City",
+//     "Security",
+//   ];
 
-  const gender = ["Male", "Female", "Other"];
+//   const gender = ["Male", "Female", "Other"];
 
-  return (
-    <>
-      <div
-        className="step-group"
-        style={{ display: step === 1 ? "block" : "none" }}
-      >
-        <div className="form-box">
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-field"
-              placeholder="Leader Name"
-              name="leaderName"
-              value={formData.leaderName}
-              onChange={(e) => handleInputChange("leaderName", e.target.value)}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-field"
-              placeholder="Team Name"
-              name="teamName"
-              value={formData.teamName}
-              onChange={(e) => handleInputChange("teamName", e.target.value)}
-            />
-          </div>
-        </div>
+//   return (
+//     <>
+//       <div
+//         className="step-group"
+//         style={{ display: step === 1 ? "block" : "none" }}
+//       >
+//         <div className="form-box">
+//           <div className="form-group">
+//             <input
+//               type="text"
+//               className="form-field"
+//               placeholder="Leader Name"
+//               name="leaderName"
+//               value={formData.leaderName}
+//               onChange={(e) => handleInputChange("leaderName", e.target.value)}
+//             />
+//           </div>
+//           <div className="form-group">
+//             <input
+//               type="text"
+//               className="form-field"
+//               placeholder="Team Name"
+//               name="teamName"
+//               value={formData.teamName}
+//               onChange={(e) => handleInputChange("teamName", e.target.value)}
+//             />
+//           </div>
+//         </div>
 
-        <div className="form-box">
-          <div className="form-group">
-            <Dropdown
-              selected={formData.selectedTheme}
-              setSelected={(option) =>
-                handleInputChange("selectedTheme", option)
-              }
-              options={themes}
-              color={
-                formData.selectedTheme === "Choose Theme"
-                  ? "#cac1ce"
-                  : "var(--text-black-700)"
-              }
-            />
-          </div>
-          <div className="form-group">
-            <Dropdown
-              selected={formData.selectedGender}
-              setSelected={(option) =>
-                handleInputChange("selectedGender", option)
-              }
-              options={gender}
-              color={
-                formData.selectedGender === "Leader Gender"
-                  ? "#cac1ce"
-                  : "var(--text-black-700)"
-              }
-            />
-          </div>
-        </div>
+//         <div className="form-box">
+//           <div className="form-group">
+//             <Dropdown
+//               selected={formData.selectedTheme}
+//               setSelected={(option) =>
+//                 handleInputChange("selectedTheme", option)
+//               }
+//               options={themes}
+//               color={
+//                 formData.selectedTheme === "Choose Theme"
+//                   ? "#cac1ce"
+//                   : "var(--text-black-700)"
+//               }
+//             />
+//           </div>
+//           <div className="form-group">
+//             <Dropdown
+//               selected={formData.selectedGender}
+//               setSelected={(option) =>
+//                 handleInputChange("selectedGender", option)
+//               }
+//               options={gender}
+//               color={
+//                 formData.selectedGender === "Leader Gender"
+//                   ? "#cac1ce"
+//                   : "var(--text-black-700)"
+//               }
+//             />
+//           </div>
+//         </div>
 
-        <div className="form-box">
-          <div className="form-group">
-            <input
-              type="tel"
-              className="form-field"
-              placeholder="Leader Phone"
-              name="leaderPhone"
-              value={formData.leaderPhone}
-              onChange={(e) => handleInputChange("leaderPhone", e.target.value)}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="email"
-              className="form-field"
-              placeholder="Leader Email"
-              name="leaderEmail"
-              value={formData.leaderEmail}
-              onChange={(e) => handleInputChange("leaderEmail", e.target.value)}
-            />
-          </div>
-        </div>
+//         <div className="form-box">
+//           <div className="form-group">
+//             <input
+//               type="tel"
+//               className="form-field"
+//               placeholder="Leader Phone"
+//               name="leaderPhone"
+//               value={formData.leaderPhone}
+//               onChange={(e) => handleInputChange("leaderPhone", e.target.value)}
+//             />
+//           </div>
+//           <div className="form-group">
+//             <input
+//               type="email"
+//               className="form-field"
+//               placeholder="Leader Email"
+//               name="leaderEmail"
+//               value={formData.leaderEmail}
+//               onChange={(e) => handleInputChange("leaderEmail", e.target.value)}
+//             />
+//           </div>
+//         </div>
 
-        <div className="form-box">
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-field"
-              placeholder="Institute Name"
-              name="instituteName"
-              value={formData.instituteName}
-              onChange={(e) =>
-                handleInputChange("instituteName", e.target.value)
-              }
-            />
-          </div>
-        </div>
+//         <div className="form-box">
+//           <div className="form-group">
+//             <input
+//               type="text"
+//               className="form-field"
+//               placeholder="Institute Name"
+//               name="instituteName"
+//               value={formData.instituteName}
+//               onChange={(e) =>
+//                 handleInputChange("instituteName", e.target.value)
+//               }
+//             />
+//           </div>
+//         </div>
 
-        <div className="form-box">
-          <div className="btn-step">
-            <button type="button" onClick={nextStep}>
-              Next &#129130;
-            </button>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+//         <div className="form-box">
+//           <div className="btn-step">
+//             <button type="button" onClick={nextStep}>
+//               Next &#129130;
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
 
-export default Step1;
+// export default Step1;
