@@ -8,7 +8,7 @@ const URL = `${API_URL}/api/team/register`;
 
 const RegistrationForm = () => {
   const [selectedTheme, setSelectedTheme] = useState("Choose Theme");
-  const [selectedGender, setSelectedGender] = useState("Leader Gender");
+  const [selectedGender, setSelectedGender] = useState("Gender");
   const [member1Gender, setMember1Gender] = useState("Member 1 Gender");
   const [member2Gender, setMember2Gender] = useState("Member 2 Gender");
   const [member3Gender, setMember3Gender] = useState("Member 3 Gender");
@@ -67,60 +67,63 @@ const RegistrationForm = () => {
   const [step, setStep] = useState(1);
 
   const nextStep = () => {
-    // Validate before moving to the next step
-    if (validateStep(step)) {
-      setStep(step + 1);
-    }
+        // Validate before moving to the next step
+        if (validateStep(step)) {
+          setStep(step + 1);
+        }
   };
 
   const prevStep = () => {
     setStep(step - 1);
   };
 
-  // Function to validate step before proceeding
-  const validateStep = (step) => {
-    switch (step) {
-      case 1:
-        return (
-          teamData.leaderName &&
-          teamData.teamName &&
-          teamData.leaderPhone &&
-          teamData.leaderEmail &&
-          teamData.instituteName &&
-          selectedTheme &&
-          selectedGender
-        );
-      case 2:
-        return (
-          teamData.member1Name &&
-          teamData.member1Email &&
-          teamData.member1Phone &&
-          teamData.member2Name &&
-          teamData.member2Email &&
-          teamData.member2Phone &&
-          teamData.member3Name &&
-          teamData.member3Email &&
-          teamData.member3Phone &&
-          teamData.member4Name &&
-          teamData.member4Email &&
-          teamData.member4Phone
-        );
-      case 3:
-        return teamData.PSCode && teamData.PSTitle;
-      default:
-        return true;
-    }
-  };
+    // Function to validate step before proceeding
+    const validateStep = (step) => {
+      switch (step) {
+        case 1:
+          return (
+            teamData.leaderName &&
+            teamData.teamName &&
+            teamData.leaderPhone &&
+            teamData.leaderEmail &&
+            teamData.instituteName &&
+            selectedTheme &&
+            selectedGender
+          );
+        case 2:
+          return (
+            teamData.member1Name &&
+            teamData.member1Email &&
+            teamData.member1Phone &&
+            teamData.member2Name &&
+            teamData.member2Email &&
+            teamData.member2Phone &&
+            teamData.member3Name &&
+            teamData.member3Email &&
+            teamData.member3Phone &&
+            teamData.member4Name &&
+            teamData.member4Email &&
+            teamData.member4Phone
+          );
+        case 3:
+          return teamData.PSCode && teamData.PSTitle;
+        default:
+          return true;
+      }
+    };
 
-  // Function to validate selected files
+      // Function to validate selected files
   const validateFiles = () => {
     return selectedFile && selectedFile2 && selectedFile3;
   };
 
-  // Function to validate the entire form
+      // Function to validate the entire form
   const validateForm = () => {
     return (
-      validateStep(1) && validateStep(2) && validateStep(3) && validateFiles()
+      validateStep(1) &&
+      validateStep(2) &&
+      validateStep(3) &&
+      validateFiles()
     );
   };
 
@@ -132,8 +135,8 @@ const RegistrationForm = () => {
     "Health-Tech",
     "Law & Order",
     "Miscellaneous",
+    "Smart City",
     "Security",
-    "Urban Mobility",
   ];
 
   const [selectedFile, setSelectedFile] = useState(null);
@@ -339,64 +342,37 @@ const RegistrationForm = () => {
         <form onSubmit={handleSubmit} id="multi-step-form">
           <div
             id="form-container-box"
-            style={{ display: step === 6 ? "none" : "block" }}
+            style={{ display: step === 5 ? "none" : "block" }}
           >
             <h1 className="form-title">SIH 2.0 Registration Form</h1>
             <ul className="progress-bar">
               <li
                 className={
-                  step === 1 ||
-                  step === 2 ||
-                  step === 3 ||
-                  step === 4 ||
-                  step === 5
+                  step === 1 || step === 2 || step === 3 || step === 4
                     ? "active"
                     : ""
                 }
               >
-                <span className="step-title">
-                  <span>Team</span>
-                  <span>Details</span>
-                </span>
+                Team Details
               </li>
               <li
                 className={
-                  step === 2 || step === 3 || step === 4 || step === 5
+                  step === 2 || step === 3 || step === 4
                     ? "active line-bar"
                     : "line-bar"
                 }
               >
-                <span className="step-title">
-                  <span>Team</span>
-                  <span>Member</span>
-                  <span>Details</span>
-                </span>
+                Team Member Details
               </li>
               <li
                 className={
-                  step === 3 || step === 4 || step === 5
-                    ? "active line-bar"
-                    : "line-bar"
+                  step === 3 || step === 4 ? "active line-bar" : "line-bar"
                 }
               >
-                <span className="step-title">
-                  <span>Solution</span>
-                </span>
+                Solution
               </li>
-              <li
-                className={
-                  step === 4 || step === 5 ? "active line-bar" : "line-bar"
-                }
-              >
-                <span className="step-title">
-                  <span>Review</span>
-                  <span>Details</span>
-                </span>
-              </li>
-              <li className={step === 5 ? "active line-bar" : "line-bar"}>
-                <span className="step-title">
-                  <span>Payment</span>
-                </span>
+              <li className={step === 4 ? "active line-bar" : "line-bar"}>
+                Payment
               </li>
             </ul>
 
@@ -437,11 +413,6 @@ const RegistrationForm = () => {
                     selected={selectedTheme}
                     setSelected={setSelectedTheme}
                     options={themes}
-                    color={
-                      selectedTheme === "Choose Theme"
-                        ? "#cac1ce"
-                        : "var(--text-black-700)"
-                    }
                   />
                 </div>
                 <div class="form-group">
@@ -449,11 +420,6 @@ const RegistrationForm = () => {
                     selected={selectedGender}
                     setSelected={setSelectedGender}
                     options={gender}
-                    color={
-                      selectedGender === "Leader Gender"
-                        ? "#cac1ce"
-                        : "var(--text-black-700)"
-                    }
                   />
                 </div>
               </div>
@@ -500,8 +466,8 @@ const RegistrationForm = () => {
               {/* Buttons */}
               <div className="form-box">
                 <div className="btn-step">
-                  <button
-                    type="button"
+                  <button 
+                    type="button" 
                     onClick={nextStep}
                     disabled={!validateStep(step)}
                   >
@@ -517,7 +483,6 @@ const RegistrationForm = () => {
               style={{ display: step === 2 ? "block" : "none" }}
             >
               {/* Member 1 Details */}
-              <div className="label">Member 1 Details</div>
               <div class="form-box">
                 <div class="form-group">
                   <input
@@ -535,11 +500,6 @@ const RegistrationForm = () => {
                     selected={member1Gender}
                     setSelected={setMember1Gender}
                     options={gender}
-                    color={
-                      member1Gender === "Member 1 Gender"
-                        ? "#cac1ce"
-                        : "var(--text-black-700)"
-                    }
                   />
                 </div>
               </div>
@@ -570,7 +530,6 @@ const RegistrationForm = () => {
               </div>
 
               {/* Member 2 Details */}
-              <div className="label">Member 2 Details</div>
               <div class="form-box">
                 <div class="form-group">
                   <input
@@ -588,11 +547,6 @@ const RegistrationForm = () => {
                     selected={member2Gender}
                     setSelected={setMember2Gender}
                     options={gender}
-                    color={
-                      member2Gender === "Member 2 Gender"
-                        ? "#cac1ce"
-                        : "var(--text-black-700)"
-                    }
                   />
                 </div>
               </div>
@@ -623,7 +577,6 @@ const RegistrationForm = () => {
               </div>
 
               {/* Member 3 Details */}
-              <div className="label">Member 3 Details</div>
               <div class="form-box">
                 <div class="form-group">
                   <input
@@ -641,11 +594,6 @@ const RegistrationForm = () => {
                     selected={member3Gender}
                     setSelected={setMember3Gender}
                     options={gender}
-                    color={
-                      member3Gender === "Member 3 Gender"
-                        ? "#cac1ce"
-                        : "var(--text-black-700)"
-                    }
                   />
                 </div>
               </div>
@@ -676,7 +624,6 @@ const RegistrationForm = () => {
               </div>
 
               {/* Member 4 Details */}
-              <div className="label">Member 4 Details</div>
               <div class="form-box">
                 <div class="form-group">
                   <input
@@ -694,11 +641,6 @@ const RegistrationForm = () => {
                     selected={member4Gender}
                     setSelected={setMember4Gender}
                     options={gender}
-                    color={
-                      member4Gender === "Member 4 Gender"
-                        ? "#cac1ce"
-                        : "var(--text-black-700)"
-                    }
                   />
                 </div>
               </div>
@@ -817,7 +759,7 @@ const RegistrationForm = () => {
                     &#65513; Prev
                   </button>
                   <button type="button" onClick={nextStep}>
-                    Review &#65515;
+                    Next &#65515;
                   </button>
                 </div>
               </div>
@@ -827,204 +769,6 @@ const RegistrationForm = () => {
             <div
               className="step-group"
               style={{ display: step === 4 ? "block" : "none" }}
-            >
-              {/* Step 1 data */}
-              <div className="review-title">Team Details</div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Leader Name</span>
-                  <span className="data-value">{teamData.leaderName}</span>
-                </div>
-
-                <div className="form-group data">
-                  <span className="data-heading">Team Name</span>
-                  <span className="data-value">{teamData.teamName}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Leader Gender</span>
-                  <span className="data-value">{selectedGender}</span>
-                </div>
-
-                <div className="form-group data">
-                  <span className="data-heading">Leader Phone</span>
-                  <span className="data-value">{teamData.leaderPhone}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Leader Email</span>
-                  <span className="data-value">{teamData.leaderEmail}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">selected Theme</span>
-                  <span className="data-value">{selectedTheme}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Institute Name</span>
-                  <span className="data-value">{teamData.instituteName}</span>
-                </div>
-              </div>
-
-              {/* Step 2 Details */}
-              <div className="review-title">Team Member Details</div>
-
-              {/* Member 1 Details */}
-              <div className="label">Member 1 Details</div>
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 1 Name</span>
-                  <span className="data-value">{teamData.member1Name}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 1 Phone</span>
-                  <span className="data-value">{teamData.member1Phone}</span>
-                </div>
-
-                <div className="form-group data">
-                  <span className="data-heading">Member 1 Gender</span>
-                  <span className="data-value">{member1Gender}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 1 Email</span>
-                  <span className="data-value">{teamData.member1Email}</span>
-                </div>
-              </div>
-
-              {/* Member 2 Details */}
-              <div className="label">Member 2 Details</div>
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 2 Name</span>
-                  <span className="data-value">{teamData.member2Name}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 2 Phone</span>
-                  <span className="data-value">{teamData.member2Phone}</span>
-                </div>
-
-                <div className="form-group data">
-                  <span className="data-heading">Member 2 Gender</span>
-                  <span className="data-value">{member2Gender}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 2 Email</span>
-                  <span className="data-value">{teamData.member2Email}</span>
-                </div>
-              </div>
-
-              {/* Member 3 Details */}
-              <div className="label">Member 3 Details</div>
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 3 Name</span>
-                  <span className="data-value">{teamData.member3Name}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 3 Phone</span>
-                  <span className="data-value">{teamData.member3Phone}</span>
-                </div>
-
-                <div className="form-group data">
-                  <span className="data-heading">Member 3 Gender</span>
-                  <span className="data-value">{member3Gender}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 3 Email</span>
-                  <span className="data-value">{teamData.member3Email}</span>
-                </div>
-              </div>
-
-              {/* Member 4 Details */}
-              <div className="label">Member 4 Details</div>
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 4 Name</span>
-                  <span className="data-value">{teamData.member4Name}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 4 Phone</span>
-                  <span className="data-value">{teamData.member4Phone}</span>
-                </div>
-
-                <div className="form-group data">
-                  <span className="data-heading">Member 4 Gender</span>
-                  <span className="data-value">{member4Gender}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">Member 4 Email</span>
-                  <span className="data-value">{teamData.member4Email}</span>
-                </div>
-              </div>
-
-              {/* Step 3 Details */}
-              <div className="review-title">Problem Statement Details</div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">PSID</span>
-                  <span className="data-value">{teamData.PSCode}</span>
-                </div>
-              </div>
-
-              <div className="review-box">
-                <div className="form-group data">
-                  <span className="data-heading">PS Title</span>
-                  <span className="data-value">{teamData.PSTitle}</span>
-                </div>
-              </div>
-
-              {/* Buttons */}
-              <div className="form-box">
-                <div className="btn-step">
-                  <button type="button" onClick={prevStep}>
-                    &#9998; Edit
-                  </button>
-                  <button type="button" onClick={nextStep}>
-                    Payment &#8377;
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* <<<<< Step 5 >>>>> */}
-            <div
-              className="step-group"
-              style={{ display: step === 5 ? "block" : "none" }}
             >
               {/* QR Code Image */}
               <div className="qr-code">
@@ -1081,7 +825,7 @@ const RegistrationForm = () => {
           {/* Success box */}
           <div
             id="success-box"
-            style={{ display: step === 6 ? "flex" : "none" }}
+            style={{ display: step === 5 ? "flex" : "none" }}
           >
             <span className="done">&#10004;</span>
             <p className="success-text">
