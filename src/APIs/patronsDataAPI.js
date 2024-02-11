@@ -66,67 +66,8 @@ const chiefPatronsDataAPI = [
 
 //2.  Advisory Committee Data
 const advisoryCommitteeDataAPI = [
-  {
+    {
     id: 1,
-    photo:
-      "./images/community_images/Advisory-Committee/Dr.Sanjeev Sharma.jpeg",
-    name: "Dr. Sanjeev Sharma",
-    bio: "Deen Faculty RGPV",
-    linkedInProfile: "https://www.linkedin.com/in/sanjeev-sharma-1828623",
-    twitterProfile: "",
-    instagramProfile: "",
-    facebookProfile: "https://www.facebook.com/profile.php?id=1439324075",
-  },
-
-  {
-    id: 2,
-    photo: "./images/community_images/Advisory-Committee/Mr.Yogesh Khakre.jpeg",
-    name: "Mr. Yogesh Khakre",
-    bio: "COO Bhopal Smart City Ltd.",
-    linkedInProfile: "https://www.linkedin.com/in/yogesh-khakre",
-    twitterProfile: "https://x.com/YogeshKhakre?s=20",
-    instagramProfile:
-      "https://www.instagram.com/yogeshkhakre?igsh=MTIzOWk3NzJ5ajdxNA==",
-    facebookProfile: "https://www.facebook.com/yogesh.khakre",
-  },
-
-  {
-    id: 3,
-    photo:
-      "./images/community_images/Advisory-Committee/Mr. Shantanu Chakraborty.jpg",
-    name: "Mr. Shantanu Chakraborty",
-    bio: "Strategic Consultant at Empower",
-    linkedInProfile: "https://www.linkedin.com/in/shanchakra",
-    twitterProfile: "",
-    instagramProfile: "",
-    facebookProfile: "",
-  },
-
-  {
-    id: 4,
-    photo: "./images/community_images/Advisory-Committee/Mrs.Anuja Sharma.jpg",
-    name: "Mrs. Anuja Sharma",
-    bio: "Senior Scientist, ISRO",
-    linkedInProfile: "https://www.linkedin.com/in/anuja-sharma-86991913b",
-    twitterProfile: "",
-    instagramProfile: "",
-    facebookProfile: "",
-  },
-
-  {
-    id: 5,
-    photo:
-      "./images/community_images/Advisory-Committee/Dr.Shikha Agrawal.jpeg",
-    name: "Dr. Shikha Agrawal",
-    bio: "UIT, RGPV Bhopal",
-    linkedInProfile: "https://www.linkedin.com/in/dr-shikha-agrawal-349626a0",
-    twitterProfile: "",
-    instagramProfile: "",
-    facebookProfile: "",
-  },
-
-  {
-    id: 6,
     photo:
       "./images/community_images/Advisory-Committee/Dr. Vineet Kapoor.jpeg",
     name: "Dr. Vineet Kapoor",
@@ -138,7 +79,7 @@ const advisoryCommitteeDataAPI = [
   },
 
   {
-    id: 7,
+    id: 2,
     photo:
       "./images/community_images/Advisory-Committee/Mr. Shailendra Singh Chouhan.jpeg",
     name: "Mr. Shailendra Singh Chouhan",
@@ -148,9 +89,57 @@ const advisoryCommitteeDataAPI = [
     instagramProfile: "",
     facebookProfile: "",
   },
+  {
+    id: 3,
+    photo:
+      "./images/community_images/Advisory-Committee/Dr.Sanjeev Sharma.jpeg",
+    name: "Dr. Sanjeev Sharma",
+    bio: "Deen Faculty RGPV",
+    linkedInProfile: "https://www.linkedin.com/in/sanjeev-sharma-1828623",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "https://www.facebook.com/profile.php?id=1439324075",
+  },
 
   {
-    id: 8,
+    id: 4,
+    photo: "./images/community_images/Advisory-Committee/Mr.Yogesh Khakre.jpeg",
+    name: "Mr. Yogesh Khakre",
+    bio: "COO Bhopal Smart City Ltd.",
+    linkedInProfile: "https://www.linkedin.com/in/yogesh-khakre",
+    twitterProfile: "https://x.com/YogeshKhakre?s=20",
+    instagramProfile:
+      "https://www.instagram.com/yogeshkhakre?igsh=MTIzOWk3NzJ5ajdxNA==",
+    facebookProfile: "https://www.facebook.com/yogesh.khakre",
+  },
+
+  {
+    id: 5,
+    photo: "./images/community_images/Advisory-Committee/Mrs.Anuja Sharma.jpg",
+    name: "Mrs. Anuja Sharma",
+    bio: "Senior Scientist, ISRO",
+    linkedInProfile: "https://www.linkedin.com/in/anuja-sharma-86991913b",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+
+  {
+    id: 6,
+    photo:
+      "./images/community_images/Advisory-Committee/Dr.Shikha Agrawal.jpeg",
+    name: "Dr. Shikha Agrawal",
+    bio: "UIT, RGPV Bhopal",
+    linkedInProfile: "https://www.linkedin.com/in/dr-shikha-agrawal-349626a0",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+
+
+
+  {
+    id: 7,
     photo: "./images/community_images/Advisory-Committee/Mr. Sudesh More.jpeg",
     name: "Mr. Sudesh Morey",
     bio: "Director DRMZ Tech",
@@ -162,7 +151,7 @@ const advisoryCommitteeDataAPI = [
   },
 
   {
-    id: 9,
+    id: 8,
     photo: "./images/community_images/Advisory-Committee/Mr. Dwarika Singh.jpg",
     name: "Mr. Dwarika Singh",
     bio: "Founder of ITSC Private Limited",
@@ -171,6 +160,17 @@ const advisoryCommitteeDataAPI = [
     instagramProfile: "",
     facebookProfile: "https://www.facebook.com/dwarikasingh",
   },
+   // {
+  //   id: 3,
+  //   photo:
+  //     "./images/community_images/Advisory-Committee/Mr. Shantanu Chakraborty.jpg",
+  //   name: "Mr. Shantanu Chakraborty",
+  //   bio: "Strategic Consultant at Empower",
+  //   linkedInProfile: "https://www.linkedin.com/in/shanchakra",
+  //   twitterProfile: "",
+  //   instagramProfile: "",
+  //   facebookProfile: "",
+  // },
 ];
 
 // 3. Coordinators Data
