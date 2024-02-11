@@ -505,7 +505,7 @@ const RegistrationForm = () => {
                     onClick={nextStep}
                     disabled={!validateStep(step)}
                   >
-                    Next &#129130;
+                    Next &#65515;
                   </button>
                 </div>
               </div>
@@ -732,10 +732,10 @@ const RegistrationForm = () => {
               <div className="form-box">
                 <div className="btn-step">
                   <button type="button" onClick={prevStep}>
-                    &#129128; Prev
+                    &#65513; Prev
                   </button>
                   <button type="button" onClick={nextStep}>
-                    Next &#129130;
+                    Next &#65515;
                   </button>
                 </div>
               </div>
@@ -814,10 +814,10 @@ const RegistrationForm = () => {
               <div className="form-box">
                 <div className="btn-step">
                   <button type="button" onClick={prevStep}>
-                    &#129128; Prev
+                    &#65513; Prev
                   </button>
                   <button type="button" onClick={nextStep}>
-                    Review &#129130;
+                    Review &#65515;
                   </button>
                 </div>
               </div>
@@ -1068,10 +1068,10 @@ const RegistrationForm = () => {
               <div className="form-box">
                 <div className="btn-step">
                   <button type="button" onClick={prevStep}>
-                    &#129128; Prev
+                    &#65513; Prev
                   </button>
                   <button type="submit" disabled={isLoading}>
-                    {isLoading ? "Loading..." : "Submit"} &#129130;
+                    {isLoading ? "Loading..." : "Submit"} &#65515;
                   </button>
                 </div>
               </div>
