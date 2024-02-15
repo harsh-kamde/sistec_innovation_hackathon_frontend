@@ -11,7 +11,7 @@ const AnnouncementTab = () => {
               alt=""
             />
             <h3>Registration </h3>
-            <span>₹ 500/- per Team</span>
+            <span>₹ 1000/- per Team</span>
             {/* <span>Starting soon</span> */}
           </div>
           <div className="announceCard">
