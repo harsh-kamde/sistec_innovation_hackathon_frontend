@@ -784,7 +784,7 @@ const RegistrationForm = () => {
                     accept=".pdf"
                   />
                   <label htmlFor="file-input" className="custom-file-input">
-                    Choose Idea PPT(.pdf format)
+                    Choose Idea PPT( <2MB .pdf format)
                   </label>
                   <div className="file-name">
                     {selectedFile ? selectedFile.name : "No file chosen"}
@@ -802,7 +802,7 @@ const RegistrationForm = () => {
                     accept=".pdf"
                   />
                   <label htmlFor="file-input2" className="custom-file-input">
-                    Choose Consent Letter(.pdf format)
+                    Choose Consent Letter(<2MB .pdf format)
                   </label>
                   <div className="file-name">
                     {selectedFile2 ? selectedFile2.name : "No file chosen"}
@@ -1085,7 +1085,12 @@ const RegistrationForm = () => {
           >
             <span className="done">&#10004;</span>
             <p className="success-text">
-              Your Form has submitted successfully!
+              Your Form has submitted successfully!</br>
+              Join the WhatsApp group from below link for the updates.
+              </br>
+              https://chat.whatsapp.com/LpT4iFiwVsa7BaqrRJ8SwE
+              </br>
+               Note: Make sure this group only be joined by the team leader
             </p>
             <button
               type="button"
