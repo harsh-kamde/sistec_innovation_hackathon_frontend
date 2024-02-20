@@ -127,10 +127,10 @@ const ProblemStatements = () => {
         </div>
 
         {/* Coming soon Animation */}
-        {/* Remove this as Problem Statements becomes finale */}
+        {/* Remove this as Problem Statements becomes finale
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '3rem 1rem'}}>
           <h2>Available Soon</h2>
-        </div>
+        </div>  */}
       </section>
     </>
   );
