@@ -784,7 +784,7 @@ const RegistrationForm = () => {
                     accept=".pdf"
                   />
                   <label htmlFor="file-input" className="custom-file-input">
-                    Choose Idea PPT( <2MB .pdf format)
+                    Choose Idea PPT({"<"}2MB .pdf format)
                   </label>
                   <div className="file-name">
                     {selectedFile ? selectedFile.name : "No file chosen"}
@@ -802,7 +802,7 @@ const RegistrationForm = () => {
                     accept=".pdf"
                   />
                   <label htmlFor="file-input2" className="custom-file-input">
-                    Choose Consent Letter(<2MB .pdf format)
+                    Choose Consent Letter({"<"}2MB .pdf format)
                   </label>
                   <div className="file-name">
                     {selectedFile2 ? selectedFile2.name : "No file chosen"}
