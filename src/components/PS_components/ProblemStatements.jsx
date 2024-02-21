@@ -108,14 +108,16 @@ const ProblemStatements = () => {
           </table>
 
           {selectedElement && (
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={handleClose} size="lg">
               <Modal.Header closeButton>
                 <Modal.Title>
-                  Problem Statement: {selectedElement.problemStatement}
+                  PS Code: {selectedElement.PSNumber}
                 </Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                Description: {selectedElement.description}
+               Problem Statement: {selectedElement.problemStatement}
+                <br/>
+               Description: {selectedElement.description}
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
