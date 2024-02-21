@@ -1085,7 +1085,7 @@ const RegistrationForm = () => {
           >
             <span className="done">&#10004;</span>
             <p className="success-text">
-              Your Form has submitted successfully!</br>
+              Your Form has submitted successfully!<br/>
               Join the WhatsApp group from below link for the updates.
               <br/>
               https://chat.whatsapp.com/LpT4iFiwVsa7BaqrRJ8SwE
