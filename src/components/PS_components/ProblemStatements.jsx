@@ -115,9 +115,10 @@ const ProblemStatements = () => {
                 </Modal.Title>
               </Modal.Header>
               <Modal.Body>
-               Problem Statement: {selectedElement.problemStatement}
+               <strong>Problem Statement:</strong> {selectedElement.problemStatement}
                 <br/>
-               Description: {selectedElement.description}
+                <br/>
+               <strong>Description:</strong> {selectedElement.description}
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
