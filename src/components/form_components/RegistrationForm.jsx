@@ -1087,9 +1087,9 @@ const RegistrationForm = () => {
             <p className="success-text">
               Your Form has submitted successfully!</br>
               Join the WhatsApp group from below link for the updates.
-              </br>
+              <br/>
               https://chat.whatsapp.com/LpT4iFiwVsa7BaqrRJ8SwE
-              </br>
+              <br/>
                Note: Make sure this group only be joined by the team leader
             </p>
             <button
