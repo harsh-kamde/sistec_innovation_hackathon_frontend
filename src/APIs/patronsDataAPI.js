@@ -191,7 +191,7 @@ const coordinatorsDataAPI = [
     id: 3,
     photo:
       "./images/community_images/Coordinators/Mrs. Namrata Shrivastava.jpg",
-    name: "Mrs. Namrata Shrivastava",
+    name: "Ms. Namrata Shrivastava",
     bio: "Assistant Professor",
     linkedInProfile:
       "https://www.linkedin.com/in/namrata-shrivastava-116178274",
@@ -225,7 +225,7 @@ const coordinatorsDataAPI = [
   {
     id: 6,
     photo: "./images/community_images/Coordinators/Mrs. Vandana Rai.jpg",
-    name: "Mrs. Vandana Rai",
+    name: "Ms. Vandana Rai",
     bio: "Assistant Professor",
     linkedInProfile: "https://www.linkedin.com/in/vandana-rai-b432b0234",
     twitterProfile: "",
@@ -258,7 +258,7 @@ const coordinatorsDataAPI = [
   {
     id: 9,
     photo: "./images/community_images/Coordinators/Mrs. Khushboo Bhardwaj.jpg",
-    name: "Mrs. Khushboo Bhardwaj",
+    name: "Ms. Khushboo Bhardwaj",
     bio: "Assistant Professor",
     linkedInProfile: "",
     twitterProfile: "",
@@ -283,7 +283,7 @@ const coordinatorsDataAPI = [
   {
     id: 11,
     photo: "./images/community_images/Coordinators/Mrs. Priyanka Bhatele.jpg",
-    name: "Mrs. Priyanka Bhatele",
+    name: "Ms. Priyanka Bhatele",
     bio: "Assistant Professor",
     linkedInProfile: "https://www.linkedin.com/in/priyanka-bhatele-8693a9a1",
     twitterProfile: "",
@@ -294,7 +294,7 @@ const coordinatorsDataAPI = [
   {
     id: 12,
     photo: "./images/community_images/Coordinators/Mrs. Martina Martin.jpg",
-    name: "Mrs. Martina Martin",
+    name: "Ms. Martina Martin",
     bio: "Assistant Professor",
     linkedInProfile: "https://www.linkedin.com/in/martina-martin-7b1270199",
     twitterProfile: "",
@@ -316,7 +316,7 @@ const coordinatorsDataAPI = [
   {
     id: 14,
     photo: "./images/community_images/Coordinators/Mrs. Kiran Dehariya.jpg",
-    name: "Mrs. Kiran Dehariya",
+    name: "Ms. Kiran Dehariya",
     bio: "Assistant Professor",
     linkedInProfile: "https://www.linkedin.com/in/kiran-dehariya",
     twitterProfile: "",
@@ -327,7 +327,7 @@ const coordinatorsDataAPI = [
   {
     id: 15,
     photo: "./images/community_images/Coordinators/Mrs. G. Sowjanya.jpg",
-    name: "Mrs. G. Sowjanya",
+    name: "Ms. G. Sowjanya",
     bio: "Assistant Professor",
     linkedInProfile: "",
     twitterProfile: "",
@@ -338,7 +338,7 @@ const coordinatorsDataAPI = [
   {
     id: 16,
     photo: "./images/community_images/Coordinators/Mrs. Bhavana Verma.jpg",
-    name: "Mrs. Bhavana Verma",
+    name: "Ms. Bhavana Verma",
     bio: "Assistant Professor",
     linkedInProfile: "",
     twitterProfile: "",
@@ -349,7 +349,7 @@ const coordinatorsDataAPI = [
   {
     id: 17,
     photo: "./images/community_images/Coordinators/Mrs. Anuradha Mangal.jpg",
-    name: "Mrs. Anuradha Mangal",
+    name: "Ms. Anuradha Mangal",
     bio: "Assistant Professor",
     linkedInProfile: "",
     twitterProfile: "",
