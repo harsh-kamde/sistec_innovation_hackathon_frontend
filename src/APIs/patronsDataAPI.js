@@ -5,18 +5,6 @@
 const patronsDataAPI = [
   {
     id: 1,
-    photo: "./images/community_images/Patrons/1.jpg",
-    name: "Mr. Siddharth Agrawal",
-    bio: "MD, Sagar Group",
-    linkedInProfile: "https://www.linkedin.com/in/siddharth-agrawal-10499a52",
-    twitterProfile: "https://x.com/siddharthmanit?s=20",
-    instagramProfile:
-      "https://www.instagram.com/siddharth.manit?igsh=dHJwcmlpc3VhMTF6",
-    facebookProfile: "https://www.facebook.com/sidd.agrawal",
-  },
-
-  {
-    id: 2,
     photo: "./images/community_images/Patrons/2.png",
     name: "Dr. Jyoti Deshmukh",
     bio: "Group Director at SISTec",
@@ -27,7 +15,7 @@ const patronsDataAPI = [
   },
 
   {
-    id: 3,
+    id: 2,
     photo: "./images/community_images/Patrons/3.png",
     name: "Dr. Manish Billore",
     bio: "Principal of SISTec-E",
@@ -43,17 +31,6 @@ const patronsDataAPI = [
 const chiefPatronsDataAPI = [
   {
     id: 1,
-    photo: "./images/community_images/Chief Patrons/vcsirRGPV.png",
-    name: "Dr. Sunil Kumar Gupta ",
-    bio: "Vice-Chancellor,RGPV ",
-    linkedInProfile: "https://www.linkedin.com/in/sunil-kumar-195862194",
-    twitterProfile: "",
-    instagramProfile: "",
-    facebookProfile: "https://www.facebook.com/sunil.gupta.7315720",
-  },
-
-  {
-    id: 2,
     photo: "./images/community_images/Chief Patrons/sudir_agrawal_md.jpeg",
     name: "Mr.Sudhir Kumar Agrawal",
     bio: "Hon'ble Chairman,Sagar Group",
@@ -61,6 +38,17 @@ const chiefPatronsDataAPI = [
     twitterProfile: "",
     instagramProfile: "",
     facebookProfile: "https://www.facebook.com/sudhirkumar.agrawal.7",
+  },
+  {
+    id: 2,
+    photo: "./images/community_images/Patrons/1.jpg",
+    name: "Mr. Siddharth Agrawal",
+    bio: "MD, Sagar Group",
+    linkedInProfile: "https://www.linkedin.com/in/siddharth-agrawal-10499a52",
+    twitterProfile: "https://x.com/siddharthmanit?s=20",
+    instagramProfile:
+      "https://www.instagram.com/siddharth.manit?igsh=dHJwcmlpc3VhMTF6",
+    facebookProfile: "https://www.facebook.com/sidd.agrawal",
   },
 ];
 
