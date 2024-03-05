@@ -19,7 +19,7 @@ const timeLineAPI = [
   {
     id: 2,
     icon: "fa-solid fa-address-card",
-    date: "10 Feb 2024 - 05 Mar 2024",
+    date: "10 Feb 2024 - 10 Mar 2024",
     title: "Registration",
     description: "Participants sign up for the engaging hackathon.",
   },
