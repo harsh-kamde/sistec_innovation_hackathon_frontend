@@ -13,12 +13,14 @@ import SIHTimeLine from "../components/home_components/SIHTimeLine";
 import OurCommittee from "../components/home_components/OurCommittee";
 import DeveloperCards from "../components/home_components/DeveloperCards";
 import Objective from "../components/home_components/Objective";
+import Marquee from "../components/home_components/MarqueePage";
 
 const HomePage = () => {
   return (
     <>
       <Navbar />
       <TopSlider />
+      <Marquee/>
       <HomePageHeader />
       <AnnouncementTab />
       <Objective />
