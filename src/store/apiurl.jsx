@@ -1,1 +1,1 @@
-export const API_URL="https://sistec-innovation-hackathon-backend.onrender.com";
+export const API_URL="https://sih-backend-8qx3f.ondigitalocean.app";
