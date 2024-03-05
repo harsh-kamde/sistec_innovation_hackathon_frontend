@@ -8,7 +8,7 @@ const MarqueePage = ({ text }) => {
       <Marquee speed={60} gradient={false} pauseOnHover >
       <div className="marquee-text ">
       <img src="images/new.gif" width="100"height="40" alt="new"/>
-       <h5> Note - Registration Dates Extened To 10/03/2024</h5>
+       <h5> Note - Registration Dates are Extended To 10/03/2024 </h5>
        <img src="images/new.gif" width="100"height="40" alt="new"/>
         
        
