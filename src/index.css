@@ -248,6 +248,31 @@
   font-weight: 600;
 }
 
+/* marquee */
+
+
+.marquee-container {
+  background: #000;
+  color: #fff;
+  display:flex  ;
+
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+ 
+
+}
+.marquee-text{
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  
+
+}
+
+
+
+
 /* media queries */
 @media (min-width: 1536px) {
   .innerWidth {
