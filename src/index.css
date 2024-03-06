@@ -252,7 +252,7 @@
 
 
 .marquee-container {
-  background: #015136;
+  background: var(--skin-color);
   color: #fff;
   display:flex  ;
 
