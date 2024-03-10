@@ -14,7 +14,7 @@ const faqAPI = [
   {
     id: "collapseThree",
     question: "Q. How should we form the team?",
-    answer: `Selecting the right team members is critical. Ideally,teams should be small (more than five people) so that members can develop a high-level of connection and interdependence. Members need both technical expertise and good interpersonal skills for working in small groups.`,
+    answer: `Selecting the right team members is critical. Ideally,teams should be small (only five people) so that members can develop a high-level of connection and interdependence. Members need both technical expertise and good interpersonal skills for working in small groups.`,
   },
   {
     id: "collapseFour",
