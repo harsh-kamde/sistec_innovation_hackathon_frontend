@@ -36,7 +36,7 @@ const HomePageHeader = () => {
               </p>
 
               <NavLink to="/register" className="my-btn disabled">
-                Register Now 
+                Registeration Closed
               </NavLink>
             </div>
 
