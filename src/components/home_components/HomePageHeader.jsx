@@ -35,7 +35,7 @@ const HomePageHeader = () => {
                 especially engineering students from across India
               </p>
 
-              <NavLink to="/register" className="my-btn">
+              <NavLink to="/register" className="my-btn disabled">
                 Register Now 
               </NavLink>
             </div>
