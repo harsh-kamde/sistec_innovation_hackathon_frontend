@@ -174,7 +174,7 @@ const Navbar = () => {
           </nav>
           <div className="header-right">
             {/* Register Button For Different Devices */}
-            <NavLink to="/register" className="button">
+            <NavLink to="/register" className="button disabled">
               Register
             </NavLink>
 
