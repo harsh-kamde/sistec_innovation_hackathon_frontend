@@ -178,9 +178,9 @@ const Navbar = () => {
               Register
             </NavLink>
 
-            <NavLink to="/register" className="icon-btn">
+        {/* <NavLink to="/register" className="icon-btn">
               <i className="fa-solid fa-user"></i>
-            </NavLink>
+            </NavLink> */}
 
             {/* Three Line Button */}
             <button type="button" className="open-menu-btn">
