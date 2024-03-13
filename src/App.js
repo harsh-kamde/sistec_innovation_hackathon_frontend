@@ -47,7 +47,8 @@ const App = () => {
         <Route path="/result" Component={ComingSoonResultPage} />
         <Route path="/winners" Component={ComingSoonResultPage} />
         <Route path="/contact" Component={ContactPage} />
-        <Route path="/register" Component={RegistrationPage} /> 
+        {/* <Route path="/register" Component={RegistrationPage} />  */}
+        
         <Route path="admin-login" element={<AdminLoginPage />} />
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="admin-users" element={<AdminUsers />} />
