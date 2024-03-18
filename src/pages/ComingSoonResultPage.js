@@ -10,7 +10,7 @@ const ComingSoonResultPage = () => {
   return (
     <>
       <Navbar />
-    {/*
+    
       <section className="coming-soon">
         <Lottie
           loop={true}
@@ -18,8 +18,8 @@ const ComingSoonResultPage = () => {
           className="lottie-animation"
         />
       </section>
-       */}
-   <CurrentYearGrandFinaleTeams />
+       
+  {/*<CurrentYearGrandFinaleTeams />*/}
       {/* UnComment the above line for the current year finale results */}
       <Footer />
     </>
