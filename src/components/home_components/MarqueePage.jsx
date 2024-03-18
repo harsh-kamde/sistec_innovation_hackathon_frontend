@@ -8,7 +8,7 @@ const MarqueePage = ({ text }) => {
       <Marquee speed={60} gradient={false} pauseOnHover >
       <div className="marquee-text ">
       <img src="images/new.gif" width="100"height="40" alt="new"/>
-       <h5> Note - Due to extension of registration date there is a delay in scrutiny result. we will display result soon. </h5>
+       <h5> 🎉🚀 Hackathon Finalists Announced! Check results section for details! 🚀🎉 </h5>
        <img src="images/new.gif" width="100"height="40" alt="new"/>
         
        
