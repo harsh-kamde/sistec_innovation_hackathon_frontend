@@ -10,6 +10,7 @@ import Schedule from "./pages/Schedule";
 import SIH2023Page from "./pages/SIH2023Page";
 import ProblemStatementsPage from "./pages/ProblemStatementPage";
 import ComingSoonResultPage from "./pages/ComingSoonResultPage";
+import ComingSoonWinnersPage from "./pages/ComingSoonWinnersPage";
 import PreviousYearGrandFinalePage from "./pages/PreviousYearGrandFinalePage";
 import PreviousYearWinnersPage from "./pages/PreviousYearWinnersPage";
 import ContactPage from "./pages/ContactPage";
@@ -45,7 +46,7 @@ const App = () => {
           Component={PreviousYearWinnersPage}
         />
         <Route path="/result" Component={ComingSoonResultPage} />
-        <Route path="/winners" Component={ComingSoonResultPage} />
+        <Route path="/winners" Component={ComingSoonWinnersPage} />
         <Route path="/contact" Component={ContactPage} />
         {/* <Route path="/register" Component={RegistrationPage} />  */}
         
