@@ -58,14 +58,13 @@ const CurrentYearGrandFinaleTeams = () => {
           <table className="table">
             <thead>
               <tr>
-                <th scope="col">S. No.</th>
-                <th scope="col">PSID</th>
+                <th scope="col">Registration No</th>
+                <th scope="col">Leader Name</th>
                 <th scope="col">Team Name</th>
-                <th scope="col">Team Leader Name</th>
-                <th scope="col">Organization</th>
-                <th scope="col">PS Category</th>
-                <th scope="col">Problem Statement</th>
-                <th scope="col">Collage Name</th>
+                <th scope="col">InstituteName</th>
+                <th scope="col">Theme</th>
+                <th scope="col">PSCode</th>
+                <th scope="col">PSTitle</th>
               </tr>
             </thead>
             <tbody>
@@ -82,14 +81,14 @@ const CurrentYearGrandFinaleTeams = () => {
                   return (
                     <>
                       <tr key={element.id}>
-                        <th scope="row">{element.id}</th>
+                        {/* <th scope="row">{element.id}</th> */}
                         <td>{element.PSID}</td>
-                        <td>{element.teamName}</td>
                         <td>{element.teamLeaderName}</td>
+                        <td>{element.teamName}</td>
+                        <td>{element.collage}</td>
                         <td>{element.organization}</td>
                         <td>{element.PSCategory}</td>
                         <td>{element.problemStatement}</td>
-                        <td>{element.collage}</td>
                       </tr>
                     </>
                   );
