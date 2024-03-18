@@ -27,7 +27,7 @@ const PreviousYearWinners = () => {
               <tr>
                 <th scope="col">S. No.</th>
                 <th scope="col">PSID</th>
-                <th scope="col">Team Name</th>
+                 {/* <th scope="col">Team Name</th> */}
                 <th scope="col">Team Leader Name</th>
                 <th scope="col">Organization</th>
                 <th scope="col">PS Category</th>
@@ -51,7 +51,7 @@ const PreviousYearWinners = () => {
                       <tr key={element.id}>
                         <th scope="row">{element.id}</th>
                         <td>{element.PSID}</td>
-                        <td>{element.teamName}</td>
+                        {/* <td>{element.teamName}</td> */}
                         <td>{element.teamLeaderName}</td>
                         <td>{element.organization}</td>
                         <td>{element.PSCategory}</td>
