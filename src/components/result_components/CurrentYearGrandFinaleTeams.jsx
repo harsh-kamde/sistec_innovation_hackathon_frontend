@@ -77,6 +77,13 @@ const CurrentYearGrandFinaleTeams = () => {
                         item.teamLeaderName.toLowerCase().includes(search) ||
                         item.collage.toLowerCase().includes(search);
                 })
+                  .sort((a, b) => {
+                  // Extract numeric part from PSID
+                    const aNumericPart = parseInt(a.PSID.split('_')[1]);
+                    const bNumericPart = parseInt(b.PSID.split('_')[1]);
+                  // Compare numeric parts
+                  return aNumericPart - bNumericPart;
+                })
                 .map((element) => {
                   return (
                     <>
