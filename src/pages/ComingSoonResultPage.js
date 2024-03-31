@@ -20,7 +20,7 @@ const ComingSoonResultPage = () => {
       </section> */}
       
   <CurrentYearGrandFinaleTeams />
-      {/* UnComment the above line for the current year finale results */}
+      {/* UnComment the above line for the current year finale results or comment above line for animation */}
       <Footer />
     </>
   );
