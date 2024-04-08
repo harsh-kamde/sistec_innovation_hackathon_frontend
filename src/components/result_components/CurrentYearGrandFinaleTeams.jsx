@@ -79,8 +79,8 @@ const CurrentYearGrandFinaleTeams = () => {
                 })
                   .sort((a, b) => {
                   // Extract numeric part from PSID
-                    const aNumericPart = parseInt(a.PSID.split('_')[1]);
-                    const bNumericPart = parseInt(b.PSID.split('_')[1]);
+                    const aNumericPart = parseInt(a.PSID.split('-')[1]);
+                    const bNumericPart = parseInt(b.PSID.split('-')[1]);
                   // Compare numeric parts
                   return aNumericPart - bNumericPart;
                 })
