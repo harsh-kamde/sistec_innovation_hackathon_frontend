@@ -9,7 +9,7 @@ import FAQs from "../components/home_components/FAQs";
 import AnnouncementTab from "../components/home_components/AnnouncementTab";
 import ThemeSlider from "../components/home_components/ThemeSlider";
 import SIHTimeLine from "../components/home_components/SIHTimeLine";
-// import EventSchedule from "../components/home_components/EventSchedule";
+import EventSchedule from "../components/home_components/EventSchedule";
 import OurCommittee from "../components/home_components/OurCommittee";
 import DeveloperCards from "../components/home_components/DeveloperCards";
 import Objective from "../components/home_components/Objective";
@@ -27,7 +27,7 @@ const HomePage = () => {
       <ThemeSlider />
       <ProcessFlow />
       <SIHTimeLine />
-      {/* <EventSchedule /> */}
+      <EventSchedule />
       <OurCommittee />
       <FAQs />
       <DeveloperCards />
