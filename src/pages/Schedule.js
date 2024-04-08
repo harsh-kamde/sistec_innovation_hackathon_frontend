@@ -17,8 +17,8 @@ const Schedule = () => {
           className="lottie-animation"
         />
       </section>
-{/* <div className="margin-top-ultra-max"></div>
-      <EventSchedule /> */}
+      <div className="margin-top-ultra-max"></div>
+      <EventSchedule />
       <Footer />
     </>
   );
