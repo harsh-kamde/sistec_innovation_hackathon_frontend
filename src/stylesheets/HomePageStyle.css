@@ -644,7 +644,9 @@ h3.sih-offers {
 .developer-card .card .content .details h2 a {
   font-size: 0.75em;
   font-weight: 500;
-  opacity: 0.5;
+  text-decoration: none;
+  color: var(--text-black-900);
+  opacity: 0.6;
   cursor: pointer;
 }
 

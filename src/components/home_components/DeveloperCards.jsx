@@ -71,7 +71,7 @@ const DeveloperCards = () => {
                     <h2>
                       {element.name}
                       <br />
-                      <a href={element.url} target="_blank">
+                      <a href={element.url} target="_blank" rel="nofollow">
                         {element.profession}
                       </a>
                     </h2>
