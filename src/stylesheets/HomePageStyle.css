@@ -641,13 +641,14 @@ h3.sih-offers {
   line-height: 1.2em;
 }
 
-.developer-card .card .content .details h2 span {
+.developer-card .card .content .details h2 a {
   font-size: 0.75em;
   font-weight: 500;
   opacity: 0.5;
+  cursor: pointer;
 }
 
-.developer-card .card .content .details .phone {
+.developer-card .card .content .details .bio {
   color: var(--text-black-700);
   margin-top: 20px;
 }
