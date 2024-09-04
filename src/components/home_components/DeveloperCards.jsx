@@ -6,8 +6,6 @@ const developerDataAPI = [
     id: 1,
     photo: "./images/developer_photos/hariom.jpg",
     name: "Hariom Singh",
-    profession: "Founder of GitNexa In",
-    url: "https://www.gitnexa.com",
     bio: "Frontend Developer",
     phone: "+91 9302765839",
     linkedInProfile: "https://www.linkedin.com/in/hariom-singh-rajput",
@@ -19,8 +17,6 @@ const developerDataAPI = [
     id: 2,
     photo: "./images/developer_photos/harsh.jpg",
     name: "Harsh Kamde",
-    profession: "Founder of TrySoft",
-    url: "https://www.trysoft.in",
     bio: "Backend Developer",
     phone: "+91 8085619973",
     linkedInProfile: "https://www.linkedin.com/in/harsh-kamde",
@@ -32,8 +28,6 @@ const developerDataAPI = [
     id: 3,
     photo: "./images/developer_photos/kapil.png",
     name: "Kapil Kumar",
-    profession: "Co-Founder of TrySoft",
-    url: "https://www.trysoft.in",
     bio: "Individual Developer",
     phone: "+91 8103519510",
     linkedInProfile: "https://www.linkedin.com/in/kapil-mahar-ba4115249",
@@ -71,13 +65,12 @@ const DeveloperCards = () => {
                     <h2>
                       {element.name}
                       <br />
-                      <a href={element.url} target="_blank" rel="nofollow">
-                        {element.profession}
-                      </a>
+                      <span>{element.bio}</span>
+                      <br />
                     </h2>
 
-                    <div className="bio">
-                      <span>{element.bio}</span>
+                    <div className="phone">
+                      <span>{element.phone}</span>
                     </div>
 
                     <div className="social-btn">
